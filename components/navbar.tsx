@@ -27,8 +27,8 @@ const Navbar = () => {
           </a>
           <nav className="hidden sm:block">
             <ul className="flex gap-8 text-muted-foreground">
-              {NavigationLinks.map((link) => (
-                <li>
+              {NavigationLinks.map((link, index) => (
+                <li key={index}>
                   <a href={link.url} className="hover:text-foreground">
                     {link.title}
                   </a>
